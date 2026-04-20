@@ -1,0 +1,18 @@
+name: Cilium Integration Tests
+on:
+  workflow_call:
+    inputs:
+      repository:
+        type: string
+        required: true
+      commit_ref:
+        type: string
+        required: true
+permissions:
+  contents: read
+  pull-requests: write
+jobs:
+  stub:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Integration tests would run here with image from ${{ inputs.repository }}@${{ inputs.commit_ref }}"
